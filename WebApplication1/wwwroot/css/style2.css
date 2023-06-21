@@ -1,0 +1,123 @@
+* {
+    margin-top: 0; /*köşeleri sıfırlar*/
+    padding: 0;
+}
+
+
+body{
+    color: black;
+    font-family: san-serif; /*yazı tipi değiştirir*/
+    background: linear-gradient(to right,#e3c6b4 50%,white 50%);
+    background-size: cover;
+    background-repeat: no-repeat; /*tekrarlanmamasını sağlarız*/
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex; /*yazıyı ortalamayı sağlar*/
+    justify-content: center; /*satır olarak ortalamayı sağlar*/
+    align-items: center; /*dikeyden hizalama sağlar*/
+}
+
+.center .avatar img { /* resmi boyulandırmak için kullanıyoruz*/
+    border-radius: 50%; /*resmin köşelerinden %50 ovalleştir*/
+    width: 200px; /*genişliğini ayarlar*/
+    height: 200px; /*yükseklik*/
+    margin-top: 20%; /*resmin yukarıdan yüzde beşlik uzaklaşmasını sağlar*/
+}
+
+.center {
+
+    width: 500px;
+    background-color: rgba(255,251,231); /* siyah yerin rengini belirler 231,220,203*/
+    height: 650px;
+    text-align: center; /*içerideki yazıyı ortalar*/
+    border-radius: 5px; /*köşeleri ovalleştirir.*/
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.content {
+    padding: 30px; /* yazı yerinin fotoğrafta üsttten boşluk bırakır*/
+}
+
+
+.content h1 ,h2,h3 { /*contentin h2 sine ve paragrafa düzenleme yapmak için açıldı*/
+    color: black; 
+    font-weight: lighter;
+    letter-spacing: 1px; /*yazılar arasındaki açıklık ayarlamak için*/
+    width: 100%;
+    margin: 5px auto;
+    
+}
+
+.content2 h1, h3, p{ /*contentin h2 sine ve paragrafa düzenleme yapmak için açıldı*/
+    font-weight: lighter;
+    letter-spacing: 1px; /*yazılar arasındaki açıklık ayarlamak için*/
+    width: 100%;
+    margin: 5px auto;
+}
+
+
+.content2 h1 {
+    color:black;
+    font-weight: bold;
+    font-family: "Fantasy", sans-serif;
+    font-size: 50px;
+}
+
+.inf {
+    width: 400px;
+    background-color: white; /* siyah yerin rengini belirler 231,220,203*/
+    height: 450px;
+    text-align: left; /*içerideki yazıyı ortalar*/
+    border-radius: 5px; /*köşeleri ovalleştirir.*/
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.content h3 {
+    margin-top: 50px; /*20 ikonlR pxlik bir uzaklaştırma sağlandı*/
+}
+
+div.social i { /*ikonları düzeltmek için i ye eriştik. div içinde div olduğu için başa div yazdık*/
+    padding: 0 10px; /*ikonların arasını açmak için */
+    font-size: 50px; /*ikonların boyutunu büyütmeyi sağlar*/
+    color: black; /*rgba renklerin birleşimini yapar*/
+    transition: 0,4s; /* fare hızı*/
+}
+
+    div.social i:hover { /*butonların üstüne fareyi getirdiğimiz zaman butonların olmasını istediğimiz renk*/
+        color: rgba(255,255,255,1);
+    }
+
+@media screen an (max-width:700px) { /*ekran küçültme büyütme için 700 px altına inince ne olsun*/
+    .center {
+        width: 300px; /*genişlik 300 px e düşsün*/
+        height: 500px; /*yükseklik 300 px e düşsün*/
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        widht: 90%;
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .social a i { /*a etiketinin içerisindeki i etiketleri*/
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/iletisim.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="center">
+        <div class="content">
+            <h3>Sosyal Medya Hesaplarım</h3>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i>  </a>
+            <a href="#"><i class="fa-brands fa-envelope"></i>  </a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>  </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i>  </a>
+            <a href="#"><i class="fa-brands fa-github"></i>  </a>
+        </div>
+        <hr />
+
+    </div>
+
+
+</body>
+@*<head>
+    <title>Iletisim Sayfasi</title>
+    <link href="formstil.css" type="~/css/iletisim.css" rel="stylesheet" />
+</head>*@
+
+<body>
+
+
+    <form>
+        <fieldset>
+            <legend><h3>İletişim:</h3></legend>
+            </fielset>
+
+            Isim:
+            <input type="text" name="Ýsim">
+            <br><br>
+
+            Soyisim:
+            <input type="text" name="Soyisim">
+            <br><br>
+
+            Dogum Tarihi:
+            <input type="date" name="dt" min="1850-01-01" max="2000-01-01">
+            <br><br>
+
+            Medeni Hal:
+            <Select name="Medeni Hal">
+                <option value="Null" selected>Seçiniz</option>
+                <option value="Evli">Evli</option>
+                <option value="Bekar">Bekar</option>
+                <option value="Boþanmýþ">Boþanmýþ</option>
+            </Select>
+            <br><br>
+
+            Cinsiyet:
+            <input type="radio" name="C" value="Kadýn" checked> K
+            <input type="radio" name="C" value="Erkek"> E
+            <br> <br>
+
+            E-mail:
+            <input type="email" name="email">
+            <br><br>
+
+            Ögrenim Durumu:
+            <input type="checkbox" name="e" value="ilköðretim"> İlköğretim
+            <input type="checkbox" name="e" value="Lise"> Lise
+            <input type="checkbox" name="e" value="Lisans"> Lisans
+            <input type="checkbox" name="e" value="Yüksek Lisans"> Yüksek Lisans
+            <br><br>
+
+            Adres: <br>
+<textarea name="adres"> </textarea>
+            <br><br>
+
+            Mesajiniz:<br>
+<textarea name="mesaj"> </textarea>
+            <br><br>
+
+            <input type="submit" value="Gönder">
+
+
+
+    </form>
+</body>
+</html>
+

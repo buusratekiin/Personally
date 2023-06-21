@@ -1,0 +1,47 @@
+.content h3 {
+	margin-top: 50px; /*20 ikonlR pxlik bir uzaklaþtýrma saðlandý*/
+}
+
+div.social i { /*ikonlarý düzeltmek için i ye eriþtik. div içinde div olduðu için baþa div yazdýk*/
+	padding: 0 10px; /*ikonlarýn arasýný açmak için */
+	font-size: 50px; /*ikonlarýn boyutunu büyütmeyi saðlar*/
+	color: black; /* rgba renklerin birleþimini yapar*/
+	transition: 0,4s; /* fare hýzý*/
+}
+
+	div.social i:hover { /*butonlarýn üstüne fareyi getirdiðimiz zaman butonlarýn olmasýný istediðimiz renk*/
+		color: rgba(255,255,255,1);
+	}
+
+form {
+        background-color:antiquewhite;	
+        color:#950992;
+        font-size: 15px;
+        border:3px solid solid #950992;
+}
+
+h3 {
+font-family:Comic Sans MS;
+margin: 10px;
+color: brown;
+}
+
+textarea {
+			width: 400px;
+			height: 90px;
+			max-width: 400px;
+			
+}
+
+
+body {
+			padding: 40px 100px;
+			
+		}
+
+
+input, textarea {
+			padding: 0px 10px;
+			border: 1px solid #950992;
+     }
+
